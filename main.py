@@ -16,10 +16,7 @@ class Word_Stats():
             self.file_path = sys.argv[1]
         except:
             self.file_path = input("Please type file path: ")
-        
-        regex_rules = '\s'
-        self.patern_separator = re.compile(regex_rules)
-
+            
         self.just_words_list = []
 
 
