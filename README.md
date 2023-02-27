@@ -11,7 +11,7 @@ In case you have more than one python version available run
     
     pip3 install pandas
 
-This project requires the user to input a file path when running the code.
+This project requires the user to input a txt file path when running the code.
 
 **Example:**
 
