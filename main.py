@@ -9,6 +9,7 @@
 import pandas as pd
 import re
 import sys
+from utils import *
 
 class Word_Stats():
     def __init__(self):
@@ -21,18 +22,15 @@ class Word_Stats():
 
 
     def main(self):
-        file = open(self.file_path,"r")
-        for line in file:
-            words_lst = line.split()
-            if len(words_lst) >= 1:
-                for word in words_lst:
-                    self.just_words_list.append(word)
-            else:
-                continue
-        
-        word_stats = pd.value_counts(self.just_words_list)
+        if file_ext_check(self.file_path):
+            file = read_file(self.file_path)
+            words_lst = get_words(file,self.just_words_list)
+            word_stats = count_unique_words(words_lst)
+            print(word_stats)
 
-        print(word_stats)
+        else:
+            print('Invalid file extension, .txt file extension required')
+
 
 if __name__ == "__main__":
     File_word_stats = Word_Stats()

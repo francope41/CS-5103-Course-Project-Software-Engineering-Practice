@@ -2,6 +2,5 @@
 * Check if it is valid file (.txt File)
 * Read every line of the file
 * Split words on every line based on spaces, new lines, or tabs
-* If words where found on file, save words in memory
 * Check every word and count every unique word read in the file.
 * Display unique words and how many times they repeat
