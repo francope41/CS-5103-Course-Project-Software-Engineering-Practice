@@ -37,7 +37,6 @@ class Test_count_unique_words(unittest.TestCase):
         self.assertEqual(type(count_unique_words(final_words_list)),pd.Series)
 
     def test_count_empty(self):
-        file_path = "test_file.txt"
         final_words_list = []
         self.assertEqual(type(count_unique_words(final_words_list)),pd.Series)
 
