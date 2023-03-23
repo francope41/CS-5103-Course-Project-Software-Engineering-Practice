@@ -43,7 +43,7 @@ to run use:
 
     python3 unit_testing.py
 
-## ----------------------------------------------------------------------
+## --------------------------------------------------------------------------------------
 
 ## Updates as of March, 23, 2023
 
@@ -52,3 +52,7 @@ to run use:
         - Now the program is able to count how many lines are read on the inputed file
     - Character Counting
         - Now the program is able to count how many characters are in every unique word
+
+* New test cases added
+    - Test case for correct count of lines read
+    - Test case for correct output of characters in every word
