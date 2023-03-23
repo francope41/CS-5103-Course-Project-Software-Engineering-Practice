@@ -42,3 +42,13 @@ Make sure unit_testin.py is in the same directory as utils.py
 to run use:
 
     python3 unit_testing.py
+
+## ------------------------------------------------------------------------------------------------
+
+## Updates as of March, 23, 2023
+
+* New features added
+    - Line Counting:
+        - Now the program is able to count how many lines are read on the inputed file
+    - Character Counting
+        - Now the program is able to count how many characters are in every unique word
