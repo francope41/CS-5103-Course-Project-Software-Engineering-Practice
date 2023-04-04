@@ -82,7 +82,7 @@ class Test_WordReplace(unittest.TestCase):
         final_string = ' '.join(final_words_list)
         self.assertEqual(final_string,"cd cd ef")
 
-    def test_word_replace(self):
+    def test_word_replace_word_not_found(self):
         words_lst = ['ab','cd','ef']
         word_init = 'a'
         word_replacement = 'b'
