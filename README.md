@@ -56,3 +56,18 @@ to run use:
 * New test cases added
     - Test case for correct count of lines read
     - Test case for correct output of characters in every word
+
+
+## --------------------------------------------------------------------------------------
+
+## Updates as of April, 04, 2023
+
+* New Feature added
+    - Word Replacing:
+        - Now the program is able to replace one word inputed by the user with another word inputed by the user
+
+* New test cases added
+    - Test case for word in text and replaced correctly
+    - Test case for word not found in text and left the original text
+
+

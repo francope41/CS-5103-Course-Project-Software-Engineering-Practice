@@ -72,5 +72,27 @@ class Test_CharCount(unittest.TestCase):
             self.assertEqual(char_counter, len(word))
 
 
+class Test_WordReplace(unittest.TestCase):
+    def test_word_replace(self):
+        words_lst = ['ab','cd','ef']
+        word_init = 'ab'
+        word_replacement = 'cd'
+        final_words_list = replaceWord(word_init,word_replacement,words_lst)
+
+        final_string = ' '.join(final_words_list)
+        self.assertEqual(final_string,"cd cd ef")
+
+    def test_word_replace(self):
+        words_lst = ['ab','cd','ef']
+        word_init = 'a'
+        word_replacement = 'b'
+        final_words_list = replaceWord(word_init,word_replacement,words_lst)
+
+        final_string = ' '.join(final_words_list)
+        self.assertEqual(final_string,"ab cd ef")
+
+
+
+
 if __name__ == '__main__':
     unittest.main()

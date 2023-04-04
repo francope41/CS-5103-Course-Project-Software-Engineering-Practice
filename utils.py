@@ -55,3 +55,24 @@ def linecount(count):  # Function in charge of counting the lines
 
 def charCount(word):
     return len(word)
+
+
+# - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -
+# Requirements for 04 -- 04 -- 2023
+
+#New Feature Word Replacement
+
+def replaceWord(word_init, change_to, words_lst):
+    index = 0
+    if word_init in words_lst:
+        for wrd in words_lst:
+            if wrd == word_init:
+                words_lst[index] = change_to
+            index += 1
+
+        return words_lst
+
+    else:
+        print("{} not in text".format(word_init))
+        return words_lst
+
