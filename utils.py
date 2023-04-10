@@ -60,7 +60,7 @@ def charCount(word):
 # - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -
 # Requirements for 04 -- 04 -- 2023
 
-#New Feature Word Replacement
+# New Feature Word Replacement
 
 def replaceWord(word_init, change_to, words_lst):
     index = 0
@@ -75,4 +75,3 @@ def replaceWord(word_init, change_to, words_lst):
     else:
         print("{} not in text".format(word_init))
         return words_lst
-

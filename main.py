@@ -47,28 +47,27 @@ class Word_Stats():
             print(" ")
             print(fin_Dat)
 
-            #Second requirement Change
-            #Ask user for the desired word they want to change
+            # Second requirement Change
+            # Ask user for the desired word they want to change
             word_init = input("What word whould you like to change?\n"
                               "Spaces will be ignored, Word inputed is case-sensitive\n ")
-            word_init = word_init.replace(" ","")
+            word_init = word_init.replace(" ", "")
 
-            #Ask user the desired word they want to put instead          
-            word_replacement = input("What do you want to change this word to: (Spaces will be ignored)\n ")
-            word_replacement = word_replacement.replace(" ","")
+            # Ask user the desired word they want to put instead
+            word_replacement = input(
+                "What do you want to change this word to: (Spaces will be ignored)\n ")
+            word_replacement = word_replacement.replace(" ", "")
 
-            final_words_list = replaceWord(word_init,word_replacement,words_lst)
+            final_words_list = replaceWord(
+                word_init, word_replacement, words_lst)
 
             ix = 0
             for wrd in final_words_list:
-                if ix%8 == 0:
-                    final_words_list.insert(ix,"\n")
-                ix+=1
-            
+                if ix % 8 == 0:
+                    final_words_list.insert(ix, "\n")
+                ix += 1
+
             print(' '.join(final_words_list))
-
-
-
 
         else:
             print('Invalid file extension, .txt file extension required')
