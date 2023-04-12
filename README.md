@@ -43,6 +43,12 @@ to run use:
 
     python3 unit_testing.py
 
+    write path to file EG(test_file.txt)
+
+    write word to replace occurrences
+    
+    write word that will replace
+
 ## --------------------------------------------------------------------------------------
 
 ## Updates as of March, 23, 2023

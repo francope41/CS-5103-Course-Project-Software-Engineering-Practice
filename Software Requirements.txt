@@ -4,3 +4,7 @@
 * Split words on every line based on spaces, new lines, or tabs
 * Check every word and count every unique word read in the file.
 * Display unique words and how many times they repeat
+* Count and display how many lines are read
+* Count and display the number of characters on each word
+* Ask user for a word to be replaced
+* Replace all occurrences of given word
